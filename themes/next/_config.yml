@@ -96,6 +96,8 @@ menu:
   archives: /archives/ || archive
   tags: /tags/ || tags
   about: /about/ || user
+  邮箱: mailto:vibexie@gmail.com || mail-forward
+  Github: https://github.com/vibexie || github
   #categories: /categories/ || th
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap

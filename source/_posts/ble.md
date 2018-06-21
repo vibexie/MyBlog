@@ -4,7 +4,7 @@ date: 2016-11-29 03:23:06
 tags: android
 ---
 
-### 概述
+#### 概述
 
 * 什么是BLE?
 BLE 是 Bluetooth Low Energy 的缩写，即蓝牙低功耗方案。Android 4.3 (API Level 18) 内置框架引入了BLE；
@@ -12,7 +12,7 @@ BLE 是 Bluetooth Low Energy 的缩写，即蓝牙低功耗方案。Android 4.3 
 与传统的蓝牙对比, 蓝牙低功耗方案 (Bluetooth Low Energy) 是出于更低的电量消耗考虑而设计的. 这可以使 Android 应用可以与 BLE 设备进行交流, 这些设备需要很低的电量, 如 近距离传感器, 心率测量设备, 健康设备 等等.
 
 <!-- more -->
-### 术语及概念
+#### 术语及概念
 * Generic Attribute Profile (GATT) 通用属性规范
 GATT 规范是一个针对 在 BLE 连接上的, 发送 和 接收 少量数据的一个规范, 所有的现有的低功耗应用的规范都是基于这个 GATT 规范制定的；蓝牙技术联盟 (Bluetooth SIG) 为低功耗设备定义了许多规范, 一个 规范 (Profile) 就是 设备如何在特定的应用中工作的详述;此外, 一个设备可以实现多个规范, 如 : 一个设备可以包含一个心率检测器, 和 电量检测器.
 * Attribute Protocol (ATT) 属性协议
@@ -24,7 +24,7 @@ GATT 规范是建立在 ATT 的上一层的, 这套改改通常被称为 GATT/AT
 * Service 服务
 服务是 Characteristic (特性) 的集合;如, 你可以有一个 名称为 "Heart Rate Monitor (心率监控)" 的服务, 包含了特性 "Heart Rate Measurement (心率测量)";你可以在 bluetooth.org 官网查询到一个基于 GATT 服务 和 规范的列表;
 
-### BLE权限
+#### BLE权限
 
 * AndroidManifest.xml 声明蓝牙权限示例
 ``` xml
@@ -46,7 +46,7 @@ if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH_LE)) 
 }
 ```
 
-### 创建BLE
+#### 创建BLE
 在应用可以通过 BLE 交互之前, 你需要验证设备是否支持 BLE 功能, 如果支持, 确定它是可以使用的;注意这个检查只有在 下面的配置 设置为 false 时才是必须的;
 ``` xml
 <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
@@ -80,7 +80,7 @@ if (mBluetoothAdapter == null || !mBluetoothAdapter.isEnabled()) {
 
 ```
 
-### 查找 BLE 设备
+#### 查找 BLE 设备
 为了搜索到 BLE 设备, 调用 BluetoothAdapter 的 startLeScan() 方法, 该方法需要一个 BluetoothAdapter.LeScanCallback 类型的参数. 你必须实现这个 LeScanCallback 接口, 因为 BLE 蓝牙设备扫描结果在这个接口中返回;
 查找策略 : 蓝牙搜索是非常耗电的, 你需要遵守以下的 中断策略 和 不循环策略.
 1. 中断策略 : 只要一发现蓝牙设备, 马上中断扫描.
@@ -146,7 +146,7 @@ private BluetoothAdapter.LeScanCallback mLeScanCallback =
 };
 ```
 
-### 连接到 GATT 服务
+#### 连接到 GATT 服务
  与 BLE 设备交互的第一步是 连接到 BLE 设备中的 GATT 服务,调用 BluetoothDevice 的 connectGatt() 方法可以连接到 BLE 设备的 GATT 服务,connectGatt() 方法需要三个参数, 参数一 Context 上下文对象, 参数二 boolean autoConnect 是否自动连接扫描到的蓝牙设备, 参数三 BluetoothGattCallback 接口实现类.
  ``` java
  mBluetoothGatt = device.connectGatt(this, false, mGattCallback);
@@ -366,7 +366,7 @@ public class DeviceControlActivity extends Activity {
 
 ```
 
-### 接收 GATT 通知
+#### 接收 GATT 通知
 当 BLE 设备中的一些特殊的特性改变, 需要通知与之连接的 Android BLE 应用.使用 setCharacteristicNotification() 方法为特性设置通知.
 ``` java
 private BluetoothGatt mBluetoothGatt;
@@ -391,7 +391,7 @@ public void onCharacteristicChanged(BluetoothGatt gatt,
 
 ```
 
-### 关闭 APP 中的 BLE 连接
+#### 关闭 APP 中的 BLE 连接
 一旦结束了 BLE 设备的使用, 调用 BluetoothGatt 的 close() 方法, 关闭 BLE 连接, 释放相关的资源.
 ``` java
 public void close() {
@@ -403,7 +403,7 @@ public void close() {
 }
 ```
 
-### 简单实践（小米note与小米手环进行数据交互）
+#### 简单实践（小米note与小米手环进行数据交互）
 我们需要实现手机蓝牙的控制，以及对小米手环的连接和数据传输。
 先看看效果:
 ![](http://qiniu.vibexie.com/blog/ble-1?imageView2/2/w/300)
@@ -697,7 +697,7 @@ public class MainActivity extends Activity {
 
 ```
 
-### BLE的相关学习链接
+#### BLE的相关学习链接
 http://www.freebuf.com/news/88281.html
 http://www.zhaoxiaodan.com/android/%E5%B0%8F%E7%B1%B3%E6%89%8B%E7%8E%AF%E8%93%9D%E7%89%99%E5%8D%8F%E8%AE%AE%E7%A0%94%E7%A9%B6.html
 http://www.race604.com/android-ble-tips/

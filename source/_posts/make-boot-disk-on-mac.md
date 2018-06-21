@@ -5,7 +5,7 @@ tags: 工具
 ---
 很多用Mac的朋友可能需要在mac上制作U盘启动盘安装系统，其实，Mac比Windows更容易制作，打开你的终端：
 <!-- more -->
-* diskutil list命令列出所有磁盘
+#### diskutil list命令列出所有磁盘
 ``` bash
 VibeXie-MBP:Blog vibexie$ diskutil list
 /dev/disk0 (internal, physical):
@@ -29,13 +29,13 @@ VibeXie-MBP:Blog vibexie$ diskutil list
 ```
 我们发现了disk2这个16G的U盘。
 
-* diskutil unmountDisk /dev/disk2命令解挂载U盘
+#### diskutil unmountDisk /dev/disk2命令解挂载U盘
 ``` bash
 VibeXie-MBP:~ vibexie$ diskutil unmountDisk /dev/disk2
 Unmount of all volumes on disk2 was successful
 ```
 
-* 写入系统镜像到U盘
+#### 写入系统镜像到U盘
 如我的镜像是Fedora24,路径是/Users/vibexie/Downloads/Fedora-Workstation-Live-x86_64-24-1.2.iso，如下，执行dd命令刻入U盘。
 ``` bash
 VibeXie-MBP:~ dd if=/Users/vibexie/Downloads/Fedora-Workstation-Live-x86_64-24-1.2.iso of=/dev/disk2 bs=1m

@@ -19,7 +19,7 @@ RabbitMQ和消息传递的过程，我们规定几个术语:
 
 说明:生成者，消费者和消息代理并不一定是要在同一个系统中，的确，在很多项目中，这三者并不是在同一个系统中。
 
-### 基于RabbitMQ “Hello World” 的Java实现
+#### 基于RabbitMQ “Hello World” 的Java实现
 在本教程的这一节中，我们写两个java小程序，一个生产者发送单个消息，同时一个消费者接受消息并且打印出来。我们会对java api的一些细节做一些说明。让我们集中精神在这个简单的小程序上开始我们的学习吧。
 在下面的示意图中，"P"是我们的生产者，"C"是我们的消费者，中间的红色部分是一个队列，即RabbitMQ为消费者保存消息的一个消息缓存。
 ![](http://www.rabbitmq.com/img/tutorials/python-one.png)
@@ -30,7 +30,7 @@ $ unzip rabbitmq-java-client-bin-*.zip
 $ cp rabbitmq-java-client-bin-*/*.jar ./
 ```
 
-### 发送消息
+#### 发送消息
 ![](http://www.rabbitmq.com/img/tutorials/sending.png)
 
 创建一个连接并连接到RabbitMQ服务器的操作如下:
@@ -60,7 +60,7 @@ channel.close();
 connection.close();
 ```
 
-##### 生产者完整代码
+#### 生产者完整代码
 ``` java
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;

@@ -3,7 +3,7 @@ title: SpringMVC整合Quartz
 date: 2016-08-16 20:41:02
 tags: springMVC
 ---
-### 对于在JavaWeb项目中使用Timer的看法
+#### 对于在JavaWeb项目中使用Timer的看法
 Timer这个类用来做定时任务看起来无可厚非，具体的用法也是非常简单。但是在JavaWeb项目中也用Timer来做定时任务是否可行呢？我们先来看看使用这种方式的方案(监听Application的启动):
 ``` java
 @Service
@@ -33,7 +33,7 @@ public class StartupListener implements ApplicationListener<ContextRefreshedEven
 在生产环境可别这么做哦，Tomcat具备热启动功能，当tomcat重新启动的时候，init会再次调用，所以，timer会增多。简单的说就是tomcat热启动一次，timer会增加一次，这样前前后后的timer都在跑，想必这偏离了你的需求吧。
 所以，不要在JavaWeb项目中使用Timer。
 
-### 最优方案，集成Quartz
+#### 最优方案，集成Quartz
 * 下载Quartz
 对于Maven项目:
 ``` xml
@@ -170,7 +170,7 @@ public class MyQuartz {
     <load-on-startup>1</load-on-startup>
 </servlet>
 ```
-### 遇到的问题
+#### 遇到的问题
 如果你使用的Spring版本为Spring 3.1+；启动web项目时有以下报错:
 org.springframework.scheduling.quartz.CronTriggerBean
 

@@ -5,12 +5,12 @@ tags: android
 ---
 使用selector和shape标签来定制Button的不足
 
-* 在Android开发中经常使用到button控件，我们通常通过xml定义selector和shape标签来定制button，这样做代码量虽然不是很大，但是需要定义多个xml文件才能完成一个按钮，需要耗费一些时间，并且使得项目xml文件过多且可读性差。
-* 使用selector和shape标签来定制button，必须在编译前就需要写死xml代码，无法运行中动态修改button样式，所以xml无法满足这种需求。
+1. 在Android开发中经常使用到button控件，我们通常通过xml定义selector和shape标签来定制button，这样做代码量虽然不是很大，但是需要定义多个xml文件才能完成一个按钮，需要耗费一些时间，并且使得项目xml文件过多且可读性差。
+2. 使用selector和shape标签来定制button，必须在编译前就需要写死xml代码，无法运行中动态修改button样式，所以xml无法满足这种需求。
 
 改用Java代码定义Button
 
-* [ButtonNoXml](https://github.com/vibexie/ButtonNoXml) 不是一个自定义View，只是使用了Android提供的类去替代xml定义button。使用[ButtonNoXml](https://github.com/vibexie/ButtonNoXml)，在 “大多数应用场景” 我们可以告别xml按钮了，Java代码使得代码简洁易读，进一步减小项目文件数量，同时如果你需要在运行时改变button的属性，那估计就必须要用java代码来做了。
+1. [ButtonNoXml](https://github.com/vibexie/ButtonNoXml) 不是一个自定义View，只是使用了Android提供的类去替代xml定义button。使用[ButtonNoXml](https://github.com/vibexie/ButtonNoXml)，在 “大多数应用场景” 我们可以告别xml按钮了，Java代码使得代码简洁易读，进一步减小项目文件数量，同时如果你需要在运行时改变button的属性，那估计就必须要用java代码来做了。
 
 <!-- more -->
 使用

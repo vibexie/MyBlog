@@ -3,7 +3,7 @@ title: springMVC整合RabbitMQ
 date: 2016-08-19 22:54:36
 tags: springMVC
 ---
-### 配置Maven
+#### 配置Maven
 ``` xml
 <dependencies>
     <dependency>
@@ -15,7 +15,7 @@ tags: springMVC
 ```
 官方地址: [https://projects.spring.io/spring-amqp/](https://projects.spring.io/spring-amqp/)
 
-### 谁来发送消息？
+#### 谁来发送消息？
 我们需要一个Service通过RabbitTemplate来发送消息。
 ``` java
 package com.vibexie.server.service;
@@ -47,7 +47,7 @@ rabbitService.sendMessage("oneQueue", "来自RabbitService的消息");
 即可发出消息了。
 
 
-### 谁来接收消息？
+#### 谁来接收消息？
 我们需要为每个队列写一个监听器，通过监听的方式接收消息，下面以两个队列为例，分别为queueOne和queueTwo。
 * QueueOneListener.java
 ``` java
@@ -74,7 +74,7 @@ public class QueueOneListener {
 }
 ```
 
-### Spring整合
+#### Spring整合
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans" 
@@ -111,7 +111,7 @@ public class QueueOneListener {
 	</rabbit:listener-container>
 </beans>
 ```
-### 特别说明
+#### 特别说明
 对于Rabbit的acknowledge mode，有三种，即auto，none，manual，也就是自动确认，不确认，手动确认三种模式。如果你的业务需要保证消息接收过来都保证需要处理，那就不推荐none模式了，同时，在spring整合下，也没法使用manual的方式手动去确认消息，所以，此时最好的方式就是auto的方式了，只要在QueueOneListener的onReceive方法中没有抛异常，就自动确认消费成功，否则确认消费失败。
 概况：
 1. none：接收消息的速度最快，但是没有ack机制

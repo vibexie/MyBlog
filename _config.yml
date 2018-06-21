@@ -52,6 +52,10 @@ index_generator:
   path: ''
   per_page: 10
   order_by: -date
+
+# 自己增加的，目录的分页数
+archive_generator:
+  per_page: 100
   
 # Category & Tag
 default_category: uncategorized

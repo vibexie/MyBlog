@@ -13,7 +13,7 @@ Charles是一个抓包工具，和大家用的多的Fiddler差不多。但是，
 下载地址: [https://www.charlesproxy.com/download/](https://www.charlesproxy.com/download/)
 
 * 下载破解Jar
-下载地址: [http://qiniu.vibexie.com/blog/charles.jar](http://qiniu.vibexie.com/blog/charles.jar)
+下载地址: [http://obakk2u63.bkt.clouddn.com/blog/charles.jar](http://obakk2u63.bkt.clouddn.com/blog/charles.jar)
 
 * 替换charles.jar文件（以macOS为例）
 找到Charles的安装目录，并进入/Contents/Java/

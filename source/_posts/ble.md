@@ -406,7 +406,7 @@ public void close() {
 #### 简单实践（小米note与小米手环进行数据交互）
 我们需要实现手机蓝牙的控制，以及对小米手环的连接和数据传输。
 先看看效果:
-![](http://qiniu.vibexie.com/blog/ble-1?imageView2/2/w/300)
+![](http://obakk2u63.bkt.clouddn.com/blog/ble-1?imageView2/2/w/300)
 实例代码部分有点乱：
 ``` java
 package com.vibexie.bletest;

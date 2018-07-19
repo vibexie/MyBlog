@@ -40,4 +40,4 @@ Drawable drawable = new ButtonNoXml.Builder(this)
                 .build();
 button.setBackgroundDrawable(drawable);
 ```
-![img](http://qiniu.vibexie.com/blog/button_no_xml.png?imageView2/2/h/500)
+![img](http://obakk2u63.bkt.clouddn.com/blog/button_no_xml.png?imageView2/2/h/500)

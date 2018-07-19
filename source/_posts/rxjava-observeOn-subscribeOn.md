@@ -66,7 +66,7 @@ rxjava next :RxNewThreadScheduler-2
 你，明白了吗?有疑问，没关系。
 
 再分析一下observeOn的作用域：
-![](http://qiniu.vibexie.com/blog/rxjava-observeOn-subscribeOn-1.png-width800)
+![](http://obakk2u63.bkt.clouddn.com/blog/rxjava-observeOn-subscribeOn-1.png-width800)
 
 subscribeOn的作用域：
-![](http://qiniu.vibexie.com/blog/rxjava-observeOn-subscribeOn-2.png-width800)
+![](http://obakk2u63.bkt.clouddn.com/blog/rxjava-observeOn-subscribeOn-2.png-width800)

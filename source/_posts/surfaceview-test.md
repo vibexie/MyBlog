@@ -119,7 +119,7 @@ public class MySurfaceView extends SurfaceView implements SurfaceHolder.Callback
 
 效果如下，我们创建一个旋转的正方形，以每秒100次的速度重绘整个SurfaceView，我们发现实际效果正方形没有达到每秒旋转一度，即100帧每秒，显然，100帧每秒已经远远达到了系统的上限，所以我们看到的效果是以系统最高帧进行绘制的
 
-![](http://qiniu.vibexie.com/blog/surfaceview-test.gif)
+![](http://obakk2u63.bkt.clouddn.com/blog/surfaceview-test.gif)
 
 到这明白了，我们可以在SurfaceView中在新的线程中更新UI，同时可以控制帧的大小，当然是在系统最大帧范围之内。这是View类不可能做到的。
 

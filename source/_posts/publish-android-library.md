@@ -19,7 +19,7 @@ It is very important！巨坑！
 
 * 创建AS项目，同时添加lib module，最后上传Github
 如何通过Android studio新建安卓项目，并且添加module，我就不介绍了，网上的教程都是可以的，以我的一个项目为例，项目结构如下：
-![](http://qiniu.vibexie.com/blog/public-android-library-p1.png-width500)
+![](http://obakk2u63.bkt.clouddn.com/blog/public-android-library-p1.png-width500)
 
 * 项目jitpack相关配置
 首先在项目build.gradle中添加
@@ -43,7 +43,7 @@ group='com.github.YourUsername'
 * 使用github账号登陆jitpack.io
 
 &nbsp;&nbsp;&nbsp;&nbsp;安装下图中的步骤，点击get it。
-![](http://qiniu.vibexie.com/blog/public-android-library-p2.png-width800)
+![](http://obakk2u63.bkt.clouddn.com/blog/public-android-library-p2.png-width800)
 
 &nbsp;&nbsp;&nbsp;&nbsp;点击get it，就会告诉您如何使用library了。
 

@@ -12,7 +12,7 @@ tags: mysql
 偶然间，发了新大陆了，认识了从来没有使用过的Mysql引擎Federated，它可以实现操作数据库1的一张表，数据库2的一张表也同步。修改远程的数据库表如同修改本地数据库一样方便。
 
 先看看你的mysql支持不支持federated引擎。使用show engines命令
-![img](http://qiniu.vibexie.com/blog/mysql-federate-1.png)
+![img](http://obakk2u63.bkt.clouddn.com/blog/mysql-federate-1.png)
 
 * 如果FEDERATED 的Support 为YES，那就可以直接使用了。
 * 如果为NO, 那你需要在my.conf文件中最后加入一行federated即可，然后重启就能看看的Support变成了YES。

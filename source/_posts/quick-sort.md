@@ -6,7 +6,7 @@ comments: true
 ---
 
 ### 图表演示
-![算法演示](http://qiniu.vibexie.com/blog/quick-sort.png)
+![算法演示](http://obakk2u63.bkt.clouddn.com/blog/quick-sort.png)
 
 ### Java实现
 ``` java

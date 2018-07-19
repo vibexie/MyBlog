@@ -37,7 +37,7 @@ tags: android
 ```
 以上布局的效果如下：
 
-![](http://qiniu.vibexie.com/blog/roundLayout_demo.png?imageView2/2/w/250)
+![](http://obakk2u63.bkt.clouddn.com/blog/roundLayout_demo.png?imageView2/2/w/250)
 <!-- more -->
 #### 对于RoundRelativeLayout的实现
 自定义RoundRelativeLayout

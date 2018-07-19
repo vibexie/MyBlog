@@ -51,7 +51,7 @@ footer:
   icon: user
 
   # If not defined, will be used `author` from Hexo main config.
-  copyright: VibeXie All Rights Reserved 粤ICP备15030327号-1
+  copyright: VibeXie All Rights Reserved
   # -------------------------------------------------------------
   # Hexo link (Powered by Hexo).
   powered: false

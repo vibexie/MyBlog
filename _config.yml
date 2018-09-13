@@ -83,6 +83,7 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@git.coding.net:vibexie/blog_pages.git
+#  repo: git@git.coding.net:vibexie/blog_pages.git
+  repo: git@vibexie.com:/data/git_repository/blog_pages.git
   branch: master
   message: Site updated in {{ now('YYYY-MM-DD HH:mm:ss') }}

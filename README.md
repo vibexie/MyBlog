@@ -13,3 +13,6 @@
 
 #### 2018.6.20更新
 1. Hexo主题由[Yilia](https://github.com/litten/hexo-theme-yilia/)更换成[NextT](http://theme-next.iissnan.com)，[NextT](http://theme-next.iissnan.com)大道至简，更加简洁，具有完美的Markdown支持，相比之下，[Yilia](https://github.com/litten/hexo-theme-yilia/)在Markdown显示上还是有很多问题
+
+#### 2018.11.19更新
+1. 本git仓库已迁移志私有仓库

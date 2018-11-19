@@ -3,8 +3,7 @@ title: Android高斯模糊效果实现
 date: 2016-08-08 22:11:48
 tags: android
 ---
-![模糊效果](http://obakk2u63.bkt.clouddn.com/blog/gaussian_blur.jpg?imageView2/2/w/400)
-如上图的高斯模糊效果，其实在安卓上也是很好实现的，下面给出Java算法：
+高斯模糊效果其实在安卓上也是很好实现的，下面给出Java算法：
 <!-- more -->
 ``` java
 public static Bitmap fastblur(Bitmap sentBitmap, float scale, int radius) {

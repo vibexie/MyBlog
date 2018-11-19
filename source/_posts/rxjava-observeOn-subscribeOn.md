@@ -62,11 +62,3 @@ rxjava next :RxNewThreadScheduler-2
 ```
 
 也就是说，subscribeOn 作用于该操作符之前的 Observable 的创建操作符create（以上代码没有用create，简单用了just）以及 doOnSubscribe 操作符，换句话说就是 doOnSubscribe 以及 Observable 的创建操作符总是被其之后最近的 subscribeOn 控制。
-
-你，明白了吗?有疑问，没关系。
-
-再分析一下observeOn的作用域：
-![](http://obakk2u63.bkt.clouddn.com/blog/rxjava-observeOn-subscribeOn-1.png-width800)
-
-subscribeOn的作用域：
-![](http://obakk2u63.bkt.clouddn.com/blog/rxjava-observeOn-subscribeOn-2.png-width800)
